@@ -14,12 +14,12 @@ function readformData(){
 let formData={};
 formData["Fullname"]=document.getElementById("Fullname").value;
 formData["age"]=document.getElementById("age").value;
-formData["Employee code"]=document.getElementById("Employee code").value;
+formData["Employeecode"]=document.getElementById("Employeecode").value;
 formData["salary"]=document.getElementById("salary").value;
 return formData
 }
  function insertNewRecord(Data){
-let table=document.getElementById("Employee list").getElementsByTagName("tbody")[0];
+let table=document.getElementById("Employeelist").getElementsByTagName("tbody")[0];
 let newRow=table.insertRow(table.length);
 cell1=newRow.insertCell(0);
 cell1.innerHTML=data.Fullname;
